@@ -1,0 +1,51 @@
+form {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+  }
+  .p-card {
+    width: 360px;
+    background: linear-gradient(to bottom, #D2B48C, #FAF0E6); 
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .field {
+    margin-bottom: 20px;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 5px;
+    color: #2E2E2E; 
+  }
+  
+  input[type="text"],
+  input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #D8BFD8; 
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    color: #2E2E2E;
+  }
+  
+  .block.p-error {
+    color: red;
+  }
+  
+  .p-button {
+    width: 100%;
+    margin-top: 20px;
+    background-color: #D2B48C;
+    color: #FFFFFF; 
+  }
+  
+  a {
+    color: #ff8383;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: #4a4a4a;
+  }

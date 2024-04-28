@@ -1,0 +1,70 @@
+{
+  "users": [
+    {
+      "fullName": "test user",
+      "email": "test1@gmail.com",
+      "password": "1234",
+      "id": "1"
+    },
+    {
+      "fullName": "test Data",
+      "email": "test@gmail.com",
+      "password": "1234",
+      "id": "2"
+    },
+    {
+      "id": "d919",
+      "fullName": "sanjaykarGC",
+      "email": "1234@gmail.com",
+      "password": "1234"
+    },
+    {
+      "id": "3a38",
+      "fullName": "SanjaykarGC",
+      "email": "test@gmail.com",
+      "password": "1234"
+    },
+    {
+      "id": "9819",
+      "fullName": "Sanjaykar GC",
+      "email": "sanjaykarofficials9944@gmail.com",
+      "password": "1234567890"
+    },
+    {
+      "id": "ef2a",
+      "fullName": "sanjaykarGC",
+      "email": "123@gmail.com",
+      "password": "1234"
+    },
+    {
+      "id": "9ef5",
+      "fullName": "SanjaykarGC",
+      "email": "test1@gmail.com",
+      "password": "1234"
+    },
+    {
+      "id": "2378",
+      "fullName": "SanjaykarGC",
+      "email": "test1@gmail.com",
+      "password": "123456"
+    },
+    {
+      "id": "ddac",
+      "fullName": "Sanjaykar GC",
+      "email": "test1@gmail.com",
+      "password": "12"
+    },
+    {
+      "id": "0acf",
+      "fullName": "sanjaykarGC",
+      "email": "test1@gmail.com",
+      "password": "123"
+    },
+    {
+      "id": "a2eb",
+      "fullName": "SanjaykarGC",
+      "email": "test1@gmail.com",
+      "password": "1234"
+    }
+  ]
+}

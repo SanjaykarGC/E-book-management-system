@@ -1,0 +1,33 @@
+:root{
+    --register-bg: var(--seashell);
+--register-text: var(--charcoal);
+--register-input-bg: var(--white);
+--register-input-border: var(--old-rose);
+--register-input-focus: var(--old-rose);
+--register-button-bg: var(--old-rose);
+--register-button-text: var(--white);
+}
+
+.register-form {
+    background-color: var(--register-bg);
+    color: var(--register-text);
+  }
+  
+  .register-input {
+    background-color: var(--register-input-bg);
+    border: 2px solid var(--register-input-border);
+  }
+  
+  .register-input:focus {
+    border-color: var(--register-input-focus);
+  }
+  
+  .register-button {
+    background-color: var(--register-button-bg);
+    color: var(--register-button-text);
+  }
+  
+  .login-button:hover,
+  .register-button:hover {
+    background-color: var(--chinese-violet);
+  }

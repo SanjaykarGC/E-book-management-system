@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>AngularPrimengApp</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="assets/images/hero-banner.png">
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<!-- <script>
+
+  $(window).scroll(function() {
+      var scroll = $(window).scrollTop();
+      if (scroll >= 100) {
+          $('.header').addClass('active');
+      } else {
+          $('.header').removeClass('active');
+      }
+  });
+
+  $('.play-btn').hover(
+      function() {
+          $(this).animate({ boxShadow: '0 0 0 10px transparent' }, 300);
+      },
+      function() {
+          $(this).animate({ boxShadow: '0 0 0 0 hsla(0, 0%, 100%, 0.5)' }, 300);
+      }
+  );
+
+  $('.nav-toggle-btn').click(function() {
+      $('.navbar').toggleClass('active');
+  });
+
+    $('.benefits-card').hover(
+        function() {
+            $(this).css({ transform: 'translateY(-10px)' });
+            $(this).find('.card-icon').css({ boxShadow: 'none' });
+        },
+        function() {
+            $(this).css({ transform: 'translateY(0)' });
+            $(this).find('.card-icon').css({ boxShadow: 'var(--shadow-3)' });
+        }
+    );
+
+    $(window).scroll(function() {
+        if ($(window).scrollTop() + $(window).height() > $(document).height() - 100) {
+            $('.footer').animate({ bottom: 0 }, 500);
+        } else {
+            $('.footer').animate({ bottom: -100 }, 500);
+        }
+    });
+
+    $(document).ready(function() {
+    $(".navbar-link").hover(
+        function() {
+            $(this).css("color", "var(--old-rose)");
+        },
+        function() {
+            $(this).css("color", "var(--charcoal)");
+        }
+      );
+    });
+
+    $(document).ready(function() {
+    $('.footer-link').hover(
+      function() {
+        $(this).css('color', 'var(--old-rose)');
+      },
+      function() {
+        $(this).css('color', 'var(--charcoal)');
+      }
+      );
+    });
+
+
+    $(document).ready(function() {
+function applyStyles() {
+  if ($(window).width() >= 575) {
+    $(':root').css({
+      '--fs-2': '4.5rem',
+      '--fs-3': '3.5rem',
+      '--fs-5': '2.5rem'
+    });
+
+    $('.container, .header, .navbar').css({
+      'max-width': '540px',
+      'width': '100%',
+      'margin-inline': 'auto'
+    });
+
+    $('.section-text').css('--fs-7', '2rem');
+
+    $('.header').css('top', '30px');
+    $('.header.active').css('max-width', 'unset');
+    $('.navbar').css({
+      'left': '50%',
+      'transform': 'translateX(-50%)'
+    });
+
+    $('.tab-card.active').css('height', '50vh');
+
+    $('.achievement-card').css('display', 'flex');
+    $('.achievement-card > *').css('width', '50%');
+    $('.achievement-card .card-content').css('padding-block', '30px');
+    $('.achievement-card .card-title').css('margin-block-end', '20px');
+
+    $('.social-list-title').css('--fs-6', '2.2rem');
+    $('.social-link').css({
+      'font-size': '25px',
+      'padding': '8px'
+    });
+  }
+}
+
+applyStyles(); 
+
+$(window).resize(function() {
+  applyStyles(); 
+});
+});
+
+
+$(document).ready(function() {
+function applyStyles() {
+  var windowWidth = $(window).width();
+
+  if (windowWidth >= 768) {
+    $(':root').css('--fs-2', '4.8rem');
+    $('.container, .header, .navbar').css('max-width', '720px');
+    $('.grid-list').css('grid-template-columns', '1fr 1fr');
+    $('.hero').css({
+      'padding-block-start': 'calc(var(--section-padding) + 100px)',
+      'text-align': 'left'
+    }); 
+  }
+
+  if (windowWidth >= 992) {
+    $(':root').css({
+      '--fs-2': '5.4rem',
+      '--fs-3': '4rem'
+    });
+    $('.container, .header, .navbar').css('max-width', '960px');
+    $('.grid-list').css('grid-template-columns', 'repeat(3, 1fr)');
+  
+  }
+
+  if (windowWidth >= 1200) {
+    $(':root').css({
+      '--fs-2': '6rem',
+      '--fs-3': '4.5rem',
+      '--fs-4': '3rem',
+      '--fs-5': '3rem'
+    });
+    $('.container, .header, .navbar').css('max-width', '1140px');
+  
+  }
+}
+
+applyStyles();
+
+$(window).resize(function() {
+  applyStyles();
+});
+});
+
+        $(document).ready(function(){
+          $(".toggle-section-btn").click(function(){
+            $(".hidden-section").toggle();
+          });
+        });
+      
+  function validateForm() {
+    var name = document.forms["contactForm"]["name"].value;
+    var email = document.forms["contactForm"]["email"].value;
+    var subject = document.forms["contactForm"]["subject"].value;
+    var message = document.forms["contactForm"]["message"].value;
+    var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (name == "" || email == "" || subject == "" || message == "") {
+      alert("All fields must be filled out");
+      return false;
+    }
+
+    if (!emailRegex.test(email)) {
+      alert("Please enter a valid email address");
+      return false;
+    }
+
+    return true;
+  }
+</script> -->
+
+</head>
+<body>
+  <app-root></app-root>
+</body>
+</html>
